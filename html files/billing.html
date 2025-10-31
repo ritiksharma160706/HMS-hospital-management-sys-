@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Billing - CityCare</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="app">
+  <div class="sidebar">
+    <div class="brand"><div class="logo">CC</div><h1>CuCare</h1></div>
+    <nav class="nav">
+      <a href="dashboard.html">🏠 Dashboard</a>
+      <a href="patients.html">👨‍⚕️ Patients</a>
+      <a href="doctors.html">🩺 Doctors</a>
+      <a href="appointments.html">📅 Appointments</a>
+      <a class="active" href="billing.html">💳 Billing</a>
+      <a href="reports.html">📈 Reports</a>
+    </nav>
+    <div class="footer-note">Logged in as <strong>Admin</strong></div>
+  </div>
+
+  <main class="content">
+    <div class="header">
+      <div><div class="h-title">Billing</div><div class="small">Generate bills</div></div>
+      <div class="controls"><button class="btn" onclick="showToast('Invoice generated')">Generate</button></div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Generate Bill</h3>
+        <form action="/cgi-bin/generate_bill.cgi" method="GET">
+          <div class="form-row"><input name="pid" class="input" placeholder="Patient ID" required><input name="doctor_id" class="input" placeholder="Doctor ID" required></div>
+          <div class="form-row"><input name="medicine" class="input" placeholder="Medicine Charges" type="number"><input name="other" class="input" placeholder="Other Charges" type="number"></div>
+          <div style="margin-top:10px"><button class="btn" type="submit">Generate Bill</button></div>
+        </form>
+      </div>
+
+      <div class="card" style="grid-column:span 2">
+        <h3>Recent Bills</h3>
+        <p class="text-muted">Comming Soon....</p>
+      </div>
+    </div>
+        
+       <footer class="site-footer">
+  <p>© 2025 <strong>CityCare Hospital Management System</strong> | Designed by <span class="designer">Ritik Sharma</span></p>
+</footer>
+
+  </main>
+</div>
+<script src="script.js"></script></body></html>

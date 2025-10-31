@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard - CityCare</title>
+<link rel="stylesheet" href="style.css"></head><body>
+
+
+<div class="app">
+  <div class="sidebar">
+    <div class="brand"><div class="logo">CC</div><h1><a href="index.html">CuCare</a></h1></div>
+    <nav class="nav">
+      <a class="active" href="dashboard.html">🏠 Dashboard</a>
+      <a href="patients.html">👨‍⚕️ Patients</a>
+      <a href="doctors.html">🩺 Doctors</a>
+      <a href="appointments.html">📅 Appointments</a>
+      <a href="billing.html">💳 Billing</a>
+      <a href="reports.html">📈 Reports</a>
+    </nav>
+    <div class="footer-note">Logged in as <strong>Admin</strong></div>
+  </div>
+
+  <main class="content">
+    <div class="header">
+      <div>
+        <div class="h-title">Dashboard</div>
+        <div class="small">Overview of hospital operations</div>
+      </div>
+      <div class="controls">
+        <button class="btn" onclick="showToast('Exported CSV')">Export</button>
+        <button class="btn" onclick="toggleSidebar()">Toggle Sidebar</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card"><h3>Patients</h3><p class="small">Total registered: <strong style="color:var(--accent)">124</strong></p></div>
+      <div class="card"><h3>Doctors</h3><p class="small">Specialists: <strong style="color:var(--accent)">18</strong></p></div>
+      <div class="card"><h3>Appointments</h3><p class="small">Today: <strong style="color:var(--accent)">26</strong></p></div>
+      <div class="card"><h3>Revenue</h3><p class="small">This month: <strong style="color:var(--accent)">₹ 1,24,560</strong></p></div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Recent Appointments</h3>
+      <table class="table">
+        <thead><tr><th>ID</th><th>Patient</th><th>Doctor</th><th>Date</th><th>Time</th></tr></thead>
+        <tbody>
+          <tr><td>#101</td><td>Vansh Pundir</td><td>Dr. Ritik Sharma</td><td>2025-10-28</td><td>09:30</td></tr>
+          <tr><td>#102</td><td>Raushan Kumar</td><td>Dr. Ritik Sharma</td><td>2025-10-28</td><td>10:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+      <footer class="site-footer">
+  <p>© 2025 <strong>CuCare Hospital Management System</strong> | Designed by <span class="designer">Ritik Sharma</span></p>
+</footer>
+
+  </main>
+</div>
+<script src="script.js"></script></body></html>

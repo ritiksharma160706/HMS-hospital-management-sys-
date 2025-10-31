@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Appointments - CityCare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="brand"><div class="logo">CC</div><h1>CuCare</h1></div>
+    <nav class="nav">
+      <a href="dashboard.html">🏠 Dashboard</a>
+      <a href="patients.html">👨‍⚕️ Patients</a>
+      <a href="doctors.html">🩺 Doctors</a>
+      <a class="active" href="appointments.html">📅 Appointments</a>
+      <a href="billing.html">💳 Billing</a>
+      <a href="reports.html">📈 Reports</a>
+    </nav>
+    <div class="footer-note">Logged in as <strong>Admin</strong></div>
+  </div>
+
+  <main class="content">
+    <div class="header">
+      <div>
+        <div class="h-title">Appointments</div>
+        <div class="small">Book / View Appointments</div>
+      </div>
+      <div class="controls">
+        <button class="btn" onclick="showToast('Use forms below')">Help</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- 🩺 Book Appointment -->
+      <div class="card">
+        <h3>Book Appointment</h3>
+        <form action="/cgi-bin/add_appointment.cgi" method="GET">
+          <div class="form-row">
+            <input name="pid" class="input" placeholder="Patient ID" required>
+            <input name="did" class="input" placeholder="Doctor ID" required>
+          </div>
+          <div class="form-row">
+            <input name="date" class="input" placeholder="YYYY-MM-DD" required>
+            <input name="time" class="input" placeholder="HH:MM" required>
+          </div>
+          <div class="form-row">
+            <input name="notes" class="input" placeholder="Notes">
+          </div>
+          <div style="margin-top:10px">
+            <button class="btn" type="submit">Book Appointment</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 📅 View Appointments -->
+      <div class="card" style="grid-column:span 2">
+        <h3>View Appointments</h3>
+        <p class="text-muted">See all scheduled appointments.</p>
+        <a class="btn" href="/cgi-bin/list_appointments.cgi">View Appointments List</a>
+      </div>
+    </div>
+        
+    <footer class="site-footer">
+      <p>© 2025 <strong>CuCare Hospital Management System</strong> | Designed by <span class="designer">Ritik Sharma</span></p>
+    </footer>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

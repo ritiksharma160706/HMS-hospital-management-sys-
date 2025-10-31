@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CityCare Hospital — Welcome</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ✨ Extra styles for landing feel */
+    .welcome-section {
+      text-align: center;
+      margin-top: 60px;
+      color: #fff;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .welcome-section h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #ff4d4d;
+      text-shadow: 0 0 10px rgba(255, 77, 77, 0.6);
+    }
+
+    .welcome-section p {
+      font-size: 18px;
+      color: #ddd;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .grid {
+      margin-top: 50px;
+    }
+
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="sidebar">
+      <div class="brand">
+        <div class="logo">CC</div>
+        <h1>CuCare</h1>
+      </div>
+      <nav class="nav">
+        <a class="active" href="dashboard.html">🏠 Dashboard</a>
+        <a href="patients.html">👨‍⚕️ Patients</a>
+        <a href="doctors.html">🩺 Doctors</a>
+        <a href="appointments.html">📅 Appointments</a>
+        <a href="billing.html">💳 Billing</a>
+        <a href="reports.html">📈 Reports</a>
+      </nav>
+      <div class="footer-note">Logged in as <strong>Admin</strong></div>
+    </div>
+
+    <main class="content">
+      <div class="welcome-section">
+        <h1>Welcome to CUCare Hospital</h1>
+        <p>Empowering healthcare management with secure, efficient, and smart digital solutions.</p>
+        <button class="btn" onclick="location.href='dashboard.html'" style="margin-top: 20px;">Enter Dashboard</button>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>🔒 Secure Records</h3>
+          <p>All patient and doctor records are stored safely with backend integration using C (CGI).</p>
+        </div>
+        <div class="card">
+          <h3>📅 Appointments</h3>
+          <p>Manage all hospital appointments in one place with real-time updates.</p>
+        </div>
+        <div class="card">
+          <h3>💳 Billing System</h3>
+          <p>Generate invoices, manage payments, and keep track of billing history seamlessly.</p>
+        </div>
+      </div>
+
+      <footer>© 2025 CuCare Hospital Management System | Designed by Ritik Sharma</footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

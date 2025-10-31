@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Doctors - CuCare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">CC</div>
+      <h1>CuCare</h1>
+    </div>
+    <nav class="nav">
+      <a href="dashboard.html">🏠 Dashboard</a>
+      <a href="patients.html">👨‍⚕️ Patients</a>
+      <a class="active" href="doctors.html">🩺 Doctors</a>
+      <a href="appointments.html">📅 Appointments</a>
+      <a href="billing.html">💳 Billing</a>
+      <a href="reports.html">📈 Reports</a>
+    </nav>
+    <div class="footer-note">Logged in as <strong>Admin</strong></div>
+  </div>
+
+  <main class="content">
+    <div class="header">
+      <div>
+        <div class="h-title">Doctors</div>
+        <div class="small">Add / List doctors</div>
+      </div>
+      <div class="controls">
+        <button class="btn" onclick="showToast('Use forms to manage doctors')">Help</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- Add Doctor -->
+      <div class="card">
+        <h3>Add Doctor</h3>
+        <form action="/cgi-bin/add_doctor.cgi" method="GET">
+          <div class="form-row">
+            <input name="name" class="input" placeholder="Full name" required>
+            <input name="spec" class="input" placeholder="Specialization" required>
+          </div>
+          <div class="form-row">
+            <input name="phone" class="input" placeholder="Phone">
+            <input name="fee" class="input" placeholder="Consultation Fee" type="number">
+          </div>
+          <div style="margin-top:10px">
+            <button class="btn" type="submit">Save Doctor</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- View Doctor -->
+      <div class="card" style="grid-column:span 2">
+        <h3>All Doctors</h3>
+        <p class="text-muted">Click below to view the doctors list (CGI output)</p>
+        <a class="btn" href="/cgi-bin/list_doctor.cgi">View Doctors Table</a>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>© 2025 <strong>CuCare Hospital Management System</strong> | Designed by <span class="designer">Ritik Sharma</span></p>
+    </footer>
+
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
