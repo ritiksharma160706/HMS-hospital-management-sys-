@@ -1,138 +1,89 @@
-# Hospital Management System (C Language)
+# 🏥 **Hospital Management System (HMS)**  
 
-### **📘 Overview**
+## **📘 Overview**
+The **Hospital Management System (HMS)** is a mini-project developed in **C language** using **File Handling**.  
+It provides a simple, efficient way to manage **patients**, **doctors**, and **appointments** in a hospital setup.  
+The system runs as a **CGI-based web application**, styled with a **modern black and red theme** for a clean interface.  
 
-This Hospital Management System is a console-based project developed in C language.
-It efficiently manages hospital records such as patient details, doctor information, and appointment scheduling — all through a clean file-handling approach (no database required).
+---
 
-The project demonstrates strong fundamentals of C programming, including:
+## **✨ Features**
+- **🧑‍⚕️ Doctor Management:** Add, view, and manage doctor records (name, specialization, contact info).  
+- **🧍 Patient Management:** Add, update, and display patient details like age, gender, disease, and phone number.  
+- **📅 Appointment Scheduling:** Create, list, and delete appointments between patients and doctors.  
+- **💰 Billing System:** Automatically generate bills with consultation fees, tests, medicines, and tax summary.  
+- **🧾 Data Persistence:** All information is stored in **binary data files** using file handling.  
 
-File handling (binary .dat files)
+---
 
-Structs and data organization
+## **🛠️ Technologies Used**
+- **Language:** C (CGI Programming)  
+- **Backend:** File Handling (`.dat` files)  
+- **Frontend:** HTML + Inline CSS  
+- **Theme:** Black & Red (Dark Modern UI)  
 
-Modular coding structure
+---
 
-Input validation and formatted output
-
-
-
-
-### **⚙️ Features**
-
-### **👨‍⚕️ Patient Management**
-
-Add, view, update, and delete patient records
-
-Stores name, age, gender, phone number, address, and disease details
-
-Automatically assigns unique patient IDs
-
-
-
-
-### **🩺 Doctor Management**
-
-Add and list doctors with name, specialization, and ID
-
-Easily assign doctors to patients or appointments
-
-
-
-### **📅 Appointment Scheduling**
-
-Book new appointments between patients and doctors
-
-Displays existing appointments in a styled HTML table
-
-Delete or modify appointments dynamically
-
-
-
-### **💵 Billing System**
-
-Automatically generate hospital bills for patients
-
-Includes breakdown of consultation, tests, medicines, and tax
-
-Displays a styled HTML bill with modern UI formatting
-
-
-
-### **🧠 Technologies Used**
-
-Language: C
-
-Concepts: File Handling, Structs, Pointers, CGI (Common Gateway Interface)
-
-Output: Dynamic HTML pages via C programs
-
-Files Used:
-
-patients.dat
-
-doctors.dat
-
-appointments.dat
-
-
-
-### **🖥️ How It Works**
-
-All CGI programs are placed inside the /cgi-bin/ folder.
-
-Data files (.dat) are stored inside /data/ directory.
-
-HTML pages (Dashboard, Forms, Lists) call corresponding .cgi programs for dynamic functionality.
-
-Each module (Add, List, Delete) interacts with binary data files to display updated information.
-
-
-
-### **📁 Project Structure**
-hospital-management/
+## **📂 Project Structure**
+/hospital
 │
 ├── cgi-bin/
-│   ├── add_patient.c
-│   ├── list_patients.c
-│   ├── delete_patient.c
-│   ├── add_doctor.c
-│   ├── list_doctors.c
-│   ├── add_appointment.c
-│   ├── list_appointments.c
-│   └── delete_appointment.c
+│ ├── add_patient.c
+│ ├── list_patients.c
+│ ├── add_doctor.c
+│ ├── list_doctors.c
+│ ├── add_appointment.c
+│ ├── list_appointments.c
+│ ├── delete_appointment.c
+│ ├── bill_generate.c
 │
 ├── data/
-│   ├── patients.dat
-│   ├── doctors.dat
-│   └── appointments.dat
+│ ├── patients.dat
+│ ├── doctors.dat
+│ ├── appointments.dat
 │
-├── hospital/
-│   ├── dashboard.html
-│   ├── billing.html
-│   └── forms/
+├── html/
+│ ├── dashboard.html
+│ ├── patients.html
+│ ├── doctors.html
+│ ├── appointments.html
+│ ├── billing.html
 │
 └── README.md
 
 
 
-### **🚀 Future Enhancements**
+---
 
-Add login/authentication for admin & staff
+## **🚀 How to Run**
+1. Install and configure **Apache** (with CGI enabled).  
+2. Place all `.c` files inside your server’s **cgi-bin** directory.  
+3. Compile using:
+   ```bash
+   gcc filename.c -o filename.cgi
+   
+4.Make sure the .dat files are inside the ../data/ directory.
 
-Integrate database (MySQL) for scalability
+5.Open your browser and run:
 
-Add report generation (PDF/Excel)
-
-Improve UI using modern web frameworks
+http://localhost/hospital/dashboard.html
 
 
-### **🧑‍💻 Author**
+## **💡 Future Enhancements**
 
-Ritik Sharma
-🎓 Computer Science Student
-💡 Passionate about C programming, system design, and building impactful software solutions.
+Add login system for admin and doctors.
 
-🔗 Connect on LinkedIn:(https://www.linkedin.com/in/ritik-sharma-91465b2a8/)
+Include search filters for patients and appointments.
 
-⭐ If you like this project, don’t forget to star the repo!
+Generate downloadable PDF invoices for bills.
+
+Add email/SMS notifications for appointments.
+
+## **👨‍💻 Author**
+
+## Ritik Sharma
+🎓 Computer Science Student | 💻 Developer | 🚀 Passionate about C Programming
+
+## **🖤 Theme Preview**
+
+The project uses a black & red modern interface with gradients, hover effects, and glowing buttons for a futuristic hospital dashboard experience.
