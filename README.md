@@ -16,6 +16,8 @@ Modular coding structure
 Input validation and formatted output
 
 
+
+
 ### **⚙️ Features**
 
 ### **👨‍⚕️ Patient Management**
@@ -28,11 +30,14 @@ Automatically assigns unique patient IDs
 
 
 
+
 ### **🩺 Doctor Management**
 
 Add and list doctors with name, specialization, and ID
 
 Easily assign doctors to patients or appointments
+
+
 
 ### **📅 Appointment Scheduling**
 
@@ -42,6 +47,8 @@ Displays existing appointments in a styled HTML table
 
 Delete or modify appointments dynamically
 
+
+
 ### **💵 Billing System**
 
 Automatically generate hospital bills for patients
@@ -49,6 +56,8 @@ Automatically generate hospital bills for patients
 Includes breakdown of consultation, tests, medicines, and tax
 
 Displays a styled HTML bill with modern UI formatting
+
+
 
 ### **🧠 Technologies Used**
 
@@ -66,6 +75,8 @@ doctors.dat
 
 appointments.dat
 
+
+
 ### **🖥️ How It Works**
 
 All CGI programs are placed inside the /cgi-bin/ folder.
@@ -76,7 +87,9 @@ HTML pages (Dashboard, Forms, Lists) call corresponding .cgi programs for dynami
 
 Each module (Add, List, Delete) interacts with binary data files to display updated information.
 
-📁 Project Structure
+
+
+### **📁 Project Structure**
 hospital-management/
 │
 ├── cgi-bin/
@@ -101,7 +114,9 @@ hospital-management/
 │
 └── README.md
 
-🚀 Future Enhancements
+
+
+### **🚀 Future Enhancements**
 
 Add login/authentication for admin & staff
 
@@ -111,11 +126,12 @@ Add report generation (PDF/Excel)
 
 Improve UI using modern web frameworks
 
-🧑‍💻 Author
+
+### **🧑‍💻 Author**
 
 Ritik Sharma
 🎓 Computer Science Student
 💡 Passionate about C programming, system design, and building impactful software solutions.
 
-🔗 Connect on LinkedIn: [Your LinkedIn Profile Link]
+🔗 Connect on LinkedIn:(https://www.linkedin.com/in/ritik-sharma-91465b2a8/)
 ⭐ If you like this project, don’t forget to star the repo!
