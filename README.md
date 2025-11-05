@@ -16,10 +16,9 @@ Modular coding structure
 Input validation and formatted output
 
 
+### **⚙️ Features**
 
-
-#⚙️ Features
-👨‍⚕️ Patient Management
+### **👨‍⚕️ Patient Management**
 
 Add, view, update, and delete patient records
 
@@ -29,13 +28,13 @@ Automatically assigns unique patient IDs
 
 
 
-#🩺 Doctor Management
+### **🩺 Doctor Management**
 
 Add and list doctors with name, specialization, and ID
 
 Easily assign doctors to patients or appointments
 
-📅 Appointment Scheduling
+### **📅 Appointment Scheduling**
 
 Book new appointments between patients and doctors
 
@@ -43,7 +42,7 @@ Displays existing appointments in a styled HTML table
 
 Delete or modify appointments dynamically
 
-💵 Billing System
+### **💵 Billing System**
 
 Automatically generate hospital bills for patients
 
@@ -51,7 +50,7 @@ Includes breakdown of consultation, tests, medicines, and tax
 
 Displays a styled HTML bill with modern UI formatting
 
-🧠 Technologies Used
+### **🧠 Technologies Used**
 
 Language: C
 
@@ -67,7 +66,7 @@ doctors.dat
 
 appointments.dat
 
-🖥️ How It Works
+### **🖥️ How It Works**
 
 All CGI programs are placed inside the /cgi-bin/ folder.
 
