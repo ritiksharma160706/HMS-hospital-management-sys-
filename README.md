@@ -1,6 +1,6 @@
 # Hospital Management System (C Language)
 
-📘 Overview
+### **📘 Overview**
 
 This Hospital Management System is a console-based project developed in C language.
 It efficiently manages hospital records such as patient details, doctor information, and appointment scheduling — all through a clean file-handling approach (no database required).
@@ -134,4 +134,5 @@ Ritik Sharma
 💡 Passionate about C programming, system design, and building impactful software solutions.
 
 🔗 Connect on LinkedIn:(https://www.linkedin.com/in/ritik-sharma-91465b2a8/)
+
 ⭐ If you like this project, don’t forget to star the repo!
