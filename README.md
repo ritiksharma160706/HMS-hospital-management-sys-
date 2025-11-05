@@ -15,7 +15,10 @@ Modular coding structure
 
 Input validation and formatted output
 
-⚙️ Features
+
+
+
+#⚙️ Features
 👨‍⚕️ Patient Management
 
 Add, view, update, and delete patient records
@@ -24,7 +27,9 @@ Stores name, age, gender, phone number, address, and disease details
 
 Automatically assigns unique patient IDs
 
-🩺 Doctor Management
+
+
+#🩺 Doctor Management
 
 Add and list doctors with name, specialization, and ID
 
